@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!--My Style-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!--Link Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <title>Web Portofolio</title>
+  </head>
+  <body>
+
+    <!--NavBar-->
+    <div class="container-fluid position-fixed" id="nav">
+        <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent py-3">
+            <div class="row justify-content-center">
+                <div class="col-8">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active me-3" aria-current="page" href="#about">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link me-3" href="#portofolio">Portofolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link me-3" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link me-3" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+
+    <!--EndNavBar-->
+
+    <!--Hero Section-->
+
+    <section id="hero">
+        <div class="container">
+            <div class="row position-relative">
+                <div class="col-lg-5 col-md-6 offset-lg-1 my-auto order-1 text-center text-lg-start">
+                    <h2>Hello!</h2>
+                    <h1 class="fw-bold">I'm Jeri Marlian</h1>
+                    <p>A Bachelor of Civil Engineering focused on Structural Analysis & Desain. <br> 
+                    I am proficient in using software such as <span class="fw-bold color-acsent">AutoCAD, Revit, ETABS, and Excel</span> to support project design, structural analysis, and cost estimation processes.</p>
+                    <button class="btn btn-custom1 my-1">Lets Talk <svg xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 38.044 31.65">
+                    <g id="right-arrow" transform="translate(0 -41.346)"> <g id="Group_23" data-name="Group 23" transform="translate(0 41.346)">
+                    <path id="Path_2" data-name="Path 2" d="M37.436,55.693,23.7,41.953a2.088,2.088,0,0,0-2.945,0L19.5,43.2a2.067,2.067,0,0,0-.608,1.472,2.107,2.107,0,0,0,.608,1.49L27.52,54.2H2.055A2.032,2.032,0,0,0,0,56.243v1.764a2.11,2.11,0,0,0,2.055,2.138H27.61L19.5,68.222a2.062,2.062,0,0,0,0,2.924l1.247,1.244a2.089,2.089,0,0,0,2.945,0L37.436,58.648a2.1,2.1,0,0,0,0-2.955Z" transform="translate(0 -41.346)" fill="#fff"/>
+                    </g>
+                </g>
+                </svg>
+                </button>
+                <div class="social-icon position-absolute bottom-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 31.297 31.297"> <path id="linkedin" d="M28.466,0H2.831A2.831,2.831,0,0,0,0,2.831V28.466A2.831,2.831,0,0,0,2.831,31.3H28.466A2.831,2.831,0,0,0,31.3,28.466V2.831A2.831,2.831,0,0,0,28.466,0ZM9.685,27.024a.824.824,0,0,1-.824.824H5.354a.824.824,0,0,1-.824-.824v-14.7a.824.824,0,0,1,.824-.824H8.861a.824.824,0,0,1,.824.824ZM7.107,10.113a3.332,3.332,0,1,1,3.332-3.332A3.332,3.332,0,0,1,7.107,10.113ZM28.012,27.09a.758.758,0,0,1-.758.758H23.491a.758.758,0,0,1-.758-.758v-6.9c0-1.029.3-4.508-2.688-4.508-2.319,0-2.79,2.381-2.884,3.45V27.09a.758.758,0,0,1-.758.758h-3.64a.758.758,0,0,1-.758-.758V12.256a.758.758,0,0,1,.758-.758H16.4a.758.758,0,0,1,.758.758v1.283c.86-1.291,2.138-2.287,4.859-2.287,6.026,0,5.992,5.63,5.992,8.723V27.09Z" fill="#fff"/>
+                    </svg>
+                    <svg id="github-logo" xmlns="http://www.w3.org/2000/svg" width="22" viewBox="0 0 35.627 34.755">
+                    <path id="Path_20" data-name="Path 20" d="M33.237,14.237a17.736,17.736,0,0,0-6.483-6.483,17.423,17.423,0,0,0-8.941-2.389A17.425,17.425,0,0,0,8.872,7.754a17.734,17.734,0,0,0-6.483,6.483A17.425,17.425,0,0,0,0,23.178,17.312,17.312,0,0,0,3.4,33.65a17.446,17.446,0,0,0,8.779,6.436,1.038,1.038,0,0,0,.928-.162.907.907,0,0,0,.3-.7q0-.07-.012-1.252t-.012-2.064L12.849,36a6.805,6.805,0,0,1-1.287.081,9.809,9.809,0,0,1-1.612-.162,3.6,3.6,0,0,1-1.554-.7A2.943,2.943,0,0,1,7.375,33.8l-.232-.534a5.8,5.8,0,0,0-.73-1.183A2.8,2.8,0,0,0,5.4,31.2l-.162-.116a1.7,1.7,0,0,1-.3-.279,1.272,1.272,0,0,1-.209-.325q-.07-.163.116-.267a1.5,1.5,0,0,1,.673-.1l.464.069a3.386,3.386,0,0,1,1.148.557,3.744,3.744,0,0,1,1.125,1.206A4.089,4.089,0,0,0,9.544,33.4a2.731,2.731,0,0,0,1.519.5,6.6,6.6,0,0,0,1.322-.116,4.613,4.613,0,0,0,1.044-.348,3.758,3.758,0,0,1,1.136-2.389,15.881,15.881,0,0,1-2.377-.418,9.466,9.466,0,0,1-2.18-.9,6.244,6.244,0,0,1-1.867-1.554,7.468,7.468,0,0,1-1.218-2.435,11.581,11.581,0,0,1-.475-3.479A6.765,6.765,0,0,1,8.28,17.471a6.235,6.235,0,0,1,.162-4.731,3.25,3.25,0,0,1,1.995.313,13.946,13.946,0,0,1,1.937.893q.615.371.986.626a16.751,16.751,0,0,1,8.907,0l.881-.556A12.483,12.483,0,0,1,25.282,13a3.04,3.04,0,0,1,1.879-.255,6.175,6.175,0,0,1,.185,4.731,6.766,6.766,0,0,1,1.833,4.778A11.711,11.711,0,0,1,28.7,25.74a7.178,7.178,0,0,1-1.229,2.435A6.484,6.484,0,0,1,25.6,29.718a9.484,9.484,0,0,1-2.18.9,15.865,15.865,0,0,1-2.377.418,4.131,4.131,0,0,1,1.206,3.293v4.894a.924.924,0,0,0,.29.7,1.007,1.007,0,0,0,.916.162,17.444,17.444,0,0,0,8.779-6.436,17.315,17.315,0,0,0,3.4-10.472A17.439,17.439,0,0,0,33.237,14.237Z" transform="translate(0 -5.365)" fill="#fff"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 40.402 28.59">
+                    <path id="youtube" d="M32.011,67.393H8.391A8.391,8.391,0,0,0,0,75.784V87.592a8.391,8.391,0,0,0,8.391,8.391h23.62A8.391,8.391,0,0,0,40.4,87.592V75.784A8.391,8.391,0,0,0,32.011,67.393ZM26.336,82.262,15.289,87.532a.444.444,0,0,1-.634-.4V76.263a.443.443,0,0,1,.644-.4l11.048,5.6A.444.444,0,0,1,26.336,82.262Z" transform="translate(0 -67.393)" fill="#fff"/>
+                    </svg>
+                    <svg id="instagram" xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 31.925 31.931">
+                    <path id="Path_17" data-name="Path 17" d="M32.293,9.388a11.668,11.668,0,0,0-.742-3.874A8.18,8.18,0,0,0,26.878.842,11.7,11.7,0,0,0,23,.1C21.3.019,20.753,0,16.417,0S11.539.019,9.836.094A11.671,11.671,0,0,0,5.963.836,7.791,7.791,0,0,0,3.131,2.682a7.862,7.862,0,0,0-1.84,2.826A11.7,11.7,0,0,0,.548,9.382c-.081,1.709-.1,2.252-.1,6.587s.019,4.878.094,6.581a11.667,11.667,0,0,0,.742,3.874A8.178,8.178,0,0,0,5.957,31.1a11.7,11.7,0,0,0,3.874.742c1.7.075,2.246.094,6.581.094s4.878-.019,6.581-.094a11.665,11.665,0,0,0,3.874-.742,8.167,8.167,0,0,0,4.672-4.672,11.707,11.707,0,0,0,.742-3.874c.075-1.7.094-2.246.094-6.581s-.006-4.878-.081-6.581ZM29.417,22.425a8.752,8.752,0,0,1-.549,2.963,5.3,5.3,0,0,1-3.032,3.032,8.783,8.783,0,0,1-2.963.549c-1.684.075-2.189.094-6.45.094s-4.772-.019-6.45-.094a8.748,8.748,0,0,1-2.963-.549,4.913,4.913,0,0,1-1.834-1.192,4.964,4.964,0,0,1-1.192-1.834,8.785,8.785,0,0,1-.549-2.963c-.075-1.684-.094-2.19-.094-6.45s.019-4.772.094-6.45a8.748,8.748,0,0,1,.549-2.963,4.853,4.853,0,0,1,1.2-1.834A4.957,4.957,0,0,1,7.017,3.543,8.789,8.789,0,0,1,9.98,2.994c1.684-.075,2.19-.094,6.45-.094s4.772.019,6.45.094a8.752,8.752,0,0,1,2.963.549,4.91,4.91,0,0,1,1.834,1.191,4.963,4.963,0,0,1,1.192,1.834,8.788,8.788,0,0,1,.549,2.963c.075,1.684.094,2.189.094,6.45s-.019,4.759-.094,6.444Zm0,0" transform="translate(-0.449 0)" fill="#fff"/>
+                    <path id="Path_18" data-name="Path 18" d="M133.152,124.5a8.2,8.2,0,1,0,8.2,8.2A8.2,8.2,0,0,0,133.152,124.5Zm0,13.524a5.321,5.321,0,1,1,5.321-5.321A5.322,5.322,0,0,1,133.152,138.024Zm0,0" transform="translate(-117.183 -116.734)" fill="#fff"/>
+                    <path id="Path_19" data-name="Path 19" d="M366.28,90.517a1.915,1.915,0,1,1-1.915-1.915A1.915,1.915,0,0,1,366.28,90.517Zm0,0" transform="translate(-339.869 -83.075)" fill="#fff"/>
+                    </svg>
+                    <br>
+                    <a href="pdfs/JERI MARLIAN RESUME.pdf" download class="fw-bold text-decoration-none cv">Download <span class="color-acsent">CV</span></a>
+                </div>
+                </div>
+                <div class="col-lg-5 col-md-6 order-md-2">
+                    <img src="img/hero 5.jpg" width="80%" class="float-lg-end mx-auto d-block border-3" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--End Hero Section-->
+
+    <!--Section About-->
+
+    <section id="about">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-10">
+                        <h1 class="text-center fw-bold">About</h1>
+                        <hr>
+                    </div>
+                    <div class="col-lg-10 col-md-12 mt-3">
+                        <p class="text-center color-acsent">"Civil Engineer | Structural Design Enthusiast | BIM Learner"</p>
+                        <p class="text-center">As a civil engineering graduate, I focus on creating innovative and sustainable structural designs. I am skilled in using AutoCAD, Revit, ETABS, and Excel for design, analysis, and cost estimation. Passionate about Building Information Modeling (BIM), I am eager to apply modern engineering technologies to real-world projects. I am currently building my professional portfolio and seeking opportunities to contribute to dynamic projects, either as a freelancer or full-time engineer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--End Section About-->
+
+    <!--Skills-->
+
+    <section id="skill">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-10">
+                        <h1 class="fw-bold text-center">Skill</h1>
+                        <hr>
+                    </div>
+                    <div class="col-lg-10 col-md-12 text-center mt-3">
+                        <img src="img/Revit-2023.png" alt="">
+                        <img src="img/Autodesk-Robot-Structural-Analysis-Professional.png" alt="">
+                        <img src="img/etabs.png" alt="">
+                        <img src="img/autocad-logo-png_seeklogo-482394.png" alt="">
+                        <img src="img/ms office.png" alt="">
+                        <img src="img/psd.png" alt="">
+                        <img src="img/sap2000-vector-logo.png" alt="">
+                    </div>
+                </div>
+                <div class="row justify-content-center skill-content">
+                    <div class="col-lg-3 col-md-4 col-sm-10">
+                        <div class="card p-4">
+                            <div class="row text-center text-sm-start">
+                                <div class="col-sm-12">
+                                   <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg width="80px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" stroke-width="3" stroke="#000000" fill="none"><rect x="8.5" y="9.25" width="10.68" height="45.49" rx=".2" stroke-linecap="round"/><line x1="8.5" y1="14.26" x2="12.3" y2="14.26" stroke-linecap="square"/><line x1="8.5" y1="19.38" x2="12.3" y2="19.38" stroke-linecap="square"/><line x1="8.5" y1="24.51" x2="12.3" y2="24.51" stroke-linecap="square"/><line x1="8.5" y1="29.64" x2="12.3" y2="29.64" stroke-linecap="square"/><line x1="8.5" y1="34.77" x2="12.3" y2="34.77" stroke-linecap="square"/><line x1="8.5" y1="39.72" x2="12.3" y2="39.72" stroke-linecap="square"/><line x1="8.5" y1="44.66" x2="12.3" y2="44.66" stroke-linecap="square"/><line x1="8.5" y1="49.61" x2="12.3" y2="49.61" stroke-linecap="square"/><path d="M24.16,9.83V54.57a.19.19,0,0,0,.18.18h31a.19.19,0,0,0,.15-.29l-31-44.73A.18.18,0,0,0,24.16,9.83Z" stroke-linecap="round"/><path d="M29.38,26.48V49.19a.09.09,0,0,0,.08.08H44.63a.2.2,0,0,0,.16-.31L29.53,26.43A.08.08,0,0,0,29.38,26.48Z" stroke-linecap="round"/></svg>
+                                </div>
+                                <div class="col pt-3">
+                                    <h3 class="text-sm-start fw-bold text-center">Structural Design <br> & Analysis</h3>
+                                    <p class="text-start">Skilled in designing and analyzing concrete and steel structures. Focused on safety, efficiency, and compliance with engineering standards.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-10">
+                        <div class="card p-4">
+                            <div class="row text-center text-sm-start">
+                                <div class="col-sm-12">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" id="building" width="80px" x="0" y="0" fill="#000" version="1.1" viewBox="0 0 32 32">
+  <path d="M20 4h2v2h-2zm4 0h2v2h-2zm-4 4h2v2h-2zm4 0h2v2h-2zm-4 4h2v2h-2zm4 0h2v2h-2zm-4 4h2v2h-2zm4 0h2v2h-2zm-4 4h2v2h-2zm4 0h2v2h-2zm4-20H18a2 2 0 0 0-2 2v6H6a2 2 0 0 0-2 2v20a2 2 0 0 0 2 2h22a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM12 30h-2v-4h2v4zm2 0v-6H8v6H6V10h10v20h-2zm10 0h-2v-4h2v4zm4 0h-2v-6h-6v6h-2V2h10v28zM8 12h2v2H8zm4 0h2v2h-2zm-4 4h2v2H8zm4 0h2v2h-2zm-4 4h2v2H8zm4 0h2v2h-2z"></path>
+</svg>
+                                </div>
+                                <div class="col pt-3">
+                                    <h3 class="text-sm-start fw-bold text-center">BIM <br> MODELLER</h3>
+                                    <p class="text-start">Experienced in creating coordinated 3D structural models using Revit and BIM workflows to enhance collaboration and project visualization.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-10">
+                        <div class="card p-4">
+                            <div class="row text-center text-sm-start">
+                                <div class="col-sm-12">
+                                    <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg width="80px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" stroke-width="3" stroke="#000000" fill="none"><polyline points="45.56 46.83 45.56 56.26 7.94 56.26 7.94 20.6 19.9 7.74 45.56 7.74 45.56 21.29"/><polyline points="19.92 7.74 19.9 20.6 7.94 20.6"/><line x1="13.09" y1="47.67" x2="31.1" y2="47.67"/><line x1="13.09" y1="41.14" x2="29.1" y2="41.14"/><line x1="13.09" y1="35.04" x2="33.1" y2="35.04"/><line x1="13.09" y1="28.94" x2="39.1" y2="28.94"/><path d="M34.45,43.23l.15,4.3a.49.49,0,0,0,.62.46l4.13-1.11a.54.54,0,0,0,.34-.23L57.76,22.21a1.23,1.23,0,0,0-.26-1.72l-3.14-2.34a1.22,1.22,0,0,0-1.72.26L34.57,42.84A.67.67,0,0,0,34.45,43.23Z"/><line x1="50.2" y1="21.7" x2="55.27" y2="25.57"/></svg>
+                                </div>
+                                <div class="col pt-3">
+                                    <h3 class="text-sm-start fw-bold text-center">Project <br> Documentation</h3>
+                                    <p class="text-start">Skilled in preparing technical reports and presentation materials that clearly communicate structural concepts and design results.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-10">
+                        <div class="card p-4">
+                            <div class="row text-center text-sm-start">
+                                <div class="col-sm-12">
+                                    <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg width="90px" viewBox="0 0 64 64" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"><rect x="9.5" y="7.27" width="45" height="49.47" rx="2" fill="none" stroke="#000000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/><rect x="15.75" y="13" width="33" height="10.92" fill="none" stroke="#000000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/><rect x="28.7" y="29.47" width="7" height="7.63" rx="1" fill="none" stroke="#000000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/><rect x="15.75" y="42.5" width="7" height="7.63" rx="1" fill="none" stroke="#000000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/><rect x="28.7" y="42.59" width="7" height="7.63" rx="1" fill="none" stroke="#000000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/><rect x="15.75" y="29.47" width="7" height="7.63" rx="1" fill="none" stroke="#000000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/><rect x="41.75" y="29.47" width="7" height="20.75" rx="1" fill="none" stroke="#000000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/></svg>
+                                </div>
+                                <div class="col pt-3">
+                                    <h3 class="text-sm-start fw-bold text-center">Quantity Estimation <br> & Excel</h3>
+                                    <p class="text-start">Capable of preparing material take-offs, cost estimations, and project schedules using Excel for efficient budget and resource management.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--End Skill-->
+
+    <!--Sertifikat-->
+
+    <section id="sertifikat">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="fw-bold text-center">Sertifikat</h1>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-10 col-md-12 text-center pt-3">
+                        <img src="img/Sertifikat Best Performance Individu JERI MARLIAN_page-0001.jpg" alt="">
+                        <img src="img/BIM Introduction & Fundamental Knowlegde_page-0001.jpg" alt="">
+                        <img src="img/Sertifikat Estimator JERI MARLIAN_page-0001.jpg" alt="">
+                        <img src="img/Visualization _ Collaboration_page-0001.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center pt-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 31.297 31.297">
+  <path id="linkedin" d="M28.466,0H2.831A2.831,2.831,0,0,0,0,2.831V28.466A2.831,2.831,0,0,0,2.831,31.3H28.466A2.831,2.831,0,0,0,31.3,28.466V2.831A2.831,2.831,0,0,0,28.466,0ZM9.685,27.024a.824.824,0,0,1-.824.824H5.354a.824.824,0,0,1-.824-.824v-14.7a.824.824,0,0,1,.824-.824H8.861a.824.824,0,0,1,.824.824ZM7.107,10.113a3.332,3.332,0,1,1,3.332-3.332A3.332,3.332,0,0,1,7.107,10.113ZM28.012,27.09a.758.758,0,0,1-.758.758H23.491a.758.758,0,0,1-.758-.758v-6.9c0-1.029.3-4.508-2.688-4.508-2.319,0-2.79,2.381-2.884,3.45V27.09a.758.758,0,0,1-.758.758h-3.64a.758.758,0,0,1-.758-.758V12.256a.758.758,0,0,1,.758-.758H16.4a.758.758,0,0,1,.758.758v1.283c.86-1.291,2.138-2.287,4.859-2.287,6.026,0,5.992,5.63,5.992,8.723V27.09Z" fill="#fff"/>
+                   <p class="d-inline ps-2"><a href="#">Selengkapnya di Linked In</a></p> 
+                </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--End Sertifikat-->
+
+    <!-- Portofolio -->
+<section id="portofolio">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <h1 class="text-center fw-bold pt-4">Galery Portofolio</h1>
+        <hr>
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-10 col-md-12 d-flex flex-wrap justify-content-center p-5">
+
+        <!-- Project 1 -->
+        <div class="gallery-item" onclick="openModal(1)">
+          <img src="img/galery 1.jpg" alt="Project 1" class="gallery-img">
+          <div class="overlay">
+            <h3>Aetherial House</h3>
+            <p>Click to view details</p>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="gallery-item" onclick="openModal(2)">
+          <img src="img/galery 2.jpg" alt="Project 2" class="gallery-img">
+          <div class="overlay">
+            <h3>Gedung Tower</h3>
+            <p>Click to view details</p>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="gallery-item" onclick="openModal(3)">
+          <img src="img/galery 3.jpg" alt="Project 3" class="gallery-img">
+          <div class="overlay">
+            <h3>Setiabudi Apartement</h3>
+            <p>Click to view details</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modal untuk PDF Preview -->
+
+<div id="pdfModal" class="modal" style="display:none;">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2 id="modalTitle"></h2>
+    <div id="pdfContainer"></div>
+  </div>
+</div>
+
+     <!--End Portofolio-->
+
+     <Footer class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <img src="img/footer img.png" alt="">
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <p class="text-light">Thanks for Scrolling, That's All Folks</p>
+                </div>
+            </div>
+        </div>
+     </Footer>
+
+     <!--My Script-->
+
+     <script src="js/script.js"></script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

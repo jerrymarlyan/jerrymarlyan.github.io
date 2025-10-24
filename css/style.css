@@ -1,0 +1,276 @@
+:root {
+    --mainColor : #222831;
+    --secondaryColor : #393E46;
+    --AcsentColor : #00ADB5;
+}
+
+body {
+    background-color: var(--mainColor);
+    min-height: 900px;
+    font-family: "ubuntu" sans-serif;
+}
+
+.section h1 {
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.nav-link.active {
+    color: var(--AcsentColor) !important;
+    font-weight: 700;
+}
+
+.nav-dark {
+    background-color: var(--secondaryColor) !important;
+    z-index: 10;
+    transition: .8s;
+}
+
+.color-acsent {
+    color: var(--AcsentColor);
+}
+
+#hero {
+    color: #fff;
+    min-height: 100vh;
+    padding: 75px;
+}
+
+#hero h1 {
+    font-size: 3rem;
+}
+
+#hero h2 {
+    font-weight: 300;
+}
+
+#hero p {
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.btn-custom1 {
+    background-color: var(--AcsentColor);
+    text-align: center;
+    color: #fff;
+    min-width: 150px;
+    height: 45px;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.btn-custom1:hover {
+    box-shadow: 0 0 5px rgba(255, 166, 0, .8);
+}
+
+.cv {
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.social-icon svg {
+    margin-right: .7em;
+    margin-bottom: 10px;
+}
+
+hr {
+    width: 35%;
+    height: 5px;
+    color: var(--AcsentColor);
+    margin: 0 auto;
+    opacity: 100%;
+}
+
+#about {
+    min-height: 300px;
+    width: 100%;
+    background-color: var(--secondaryColor);
+    color: #fff;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-bottom: 80px;
+}
+
+#skill {
+    min-height: 600px;
+    width: 100%;
+    color: #fff;
+}
+
+#skill img {
+    width: 12%;
+    margin: 10px;
+}
+
+#skill .card {
+    background-color: #414558;
+    height: 340px;
+}
+
+#skill .card:hover {
+    background-color: var(--AcsentColor);
+}
+
+.skill-content {
+    margin-top: 120px;
+}
+
+#sertifikat {
+    margin-top: -170px;
+    padding-top: 270px;
+    padding-bottom: 80px;
+    background-color: var(--secondaryColor);
+    color: #fff;
+}
+
+#sertifikat p, a {
+    color: #fff !important;
+    text-decoration: none;
+}
+
+#sertifikat img {
+    width: 49%;
+    padding: 10px;
+}
+
+#portofolio {
+    color: #fff;
+}
+/* Modal container */
+.modal {
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  background-color: rgba(0,0,0,0.85);
+  display: none;
+  opacity: 0;
+  transition: opacity 0.4s ease; /* animasi fade */
+}
+
+/* Modal muncul */
+.modal.show {
+  display: block;
+  opacity: 1;
+}
+
+/* Modal content */
+.modal-content {
+  background-color: #1f2937;
+  margin: 80px auto;
+  padding: 20px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 900px;
+  color: white;
+  transform: translateY(-20px);
+  transition: transform 0.4s ease;
+}
+
+/* Saat modal aktif */
+.modal.show .modal-content {
+  transform: translateY(0);
+}
+
+/* Tombol close */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.close:hover {
+  color: white;
+}
+
+iframe {
+  width: 100%;
+  height: 600px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+/* === GALERI STYLE === */
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  margin: 10px;
+  width: 300px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.03);
+}
+
+/* Gambar */
+.gallery-item img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+/* Zoom efek */
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+/* Overlay efek */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  text-align: center;
+}
+
+/* Muncul saat hover */
+.gallery-item:hover .overlay {
+  opacity: 1;
+}
+
+/* Animasi teks */
+.overlay h3 {
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+  transform: translateY(15px);
+  transition: transform 0.3s ease;
+}
+
+.overlay p {
+  font-size: 0.9rem;
+  opacity: 0.85;
+  transform: translateY(15px);
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .overlay h3,
+.gallery-item:hover .overlay p {
+  transform: translateY(0);
+}
+
+.gallery-img {
+  width: 300px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
