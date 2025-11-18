@@ -13,7 +13,7 @@ window.addEventListener('scroll',function(){
   const projects = {
     1: {
       title: "Project Rumah Mewah 3 Lantai",
-      pdfs: ["pdfs/project1_1.pdf", "pdfs/prject1_2.pdf"]
+      pdfs: ["pdfs/project1_1.pdf", "pdfs/project1_2.pdf"]
     },
     2: {
       title: "Project Gedung Tower Unidha",
