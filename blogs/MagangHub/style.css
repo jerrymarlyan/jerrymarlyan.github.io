@@ -1,0 +1,358 @@
+/* ========================= */
+/* GLOBAL */
+/* ========================= */
+
+body{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #111827;
+  color: #1e293b;
+}
+
+/* ========================= */
+/* NAVBAR */
+/* ========================= */
+
+.portfolio-navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  padding: 0 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255,255,255,0.88);
+  backdrop-filter: blur(12px);
+  z-index: 999;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  box-sizing: border-box;
+}
+*{
+  box-sizing: border-box;
+}
+
+.logo{
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.nav-actions{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.nav-actions button{
+  padding: 10px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.download-btn{
+  background: #0f172a;
+  color: white;
+}
+
+.presentation-btn{
+  background: #2563eb;
+  color: white;
+}
+
+.nav-actions button:hover{
+  transform: translateY(-2px);
+}
+
+@media(max-width:768px){
+
+  .portfolio-navbar{
+    padding: 0 20px;
+  }
+
+  .logo{
+    font-size: 20px;
+  }
+
+  .nav-actions button{
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+}
+
+/* ========================= */
+/* SLIDE */
+/* ========================= */
+
+.portfolio-slide{
+  min-height: 75vh; /* sebelumnya 100vh */
+  padding: 140px 9% 90px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* WARNA BERBEDA TIAP SLIDE */
+
+.portfolio-slide:nth-child(odd){
+  background: linear-gradient(
+    135deg,
+    #ffffff,
+    #4c90e9
+  );
+}
+
+.portfolio-slide:nth-child(even){
+  background: linear-gradient(
+    135deg,
+    #ffffff,
+    #17d489
+  );
+}
+
+/* GARIS PEMBATAS */
+
+.portfolio-slide::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 8%;
+  width: 84%;
+  height: 1px;
+  background: rgba(15,23,42,0.08);
+}
+
+/* CONTAINER */
+
+.slide-container{
+  width: 100%;
+  max-width: 1000px;
+}
+
+/* LABEL */
+
+.slide-label,
+.slide-mini-label{
+  display: inline-block;
+  margin-bottom: 18px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #2563eb;
+  text-transform: uppercase;
+}
+
+/* HEADING */
+
+.portfolio-slide h1{
+  font-size: 68px; /* sebelumnya terlalu besar */
+  line-height: 1.1;
+  margin-bottom: 30px;
+  max-width: 950px;
+}
+
+.portfolio-slide h2{
+  font-size: 42px;
+  margin-bottom: 24px;
+}
+
+/* PARAGRAPH */
+
+.portfolio-slide p{
+  font-size: 19px;
+  line-height: 1.9;
+  color: #475569;
+  max-width: 850px;
+  justify-content: flex-start;
+  text-align: justify;
+}
+
+/* INFO */
+
+.post-info{
+  margin-top: 40px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  color: #64748b;
+}
+
+/* ========================= */
+/* CARD GRID */
+/* ========================= */
+
+.activity-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 24px;
+  margin-top: 50px;
+}
+
+.activity-card{
+  background: rgba(255,255,255,0.9);
+  padding: 30px;
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.activity-card:hover{
+  transform: translateY(-6px);
+}
+
+.activity-card h3{
+  margin-bottom: 14px;
+  color: #0f172a;
+}
+
+/* ========================= */
+/* IMAGE */
+/* ========================= */
+
+.portfolio-image{
+  width: 100%;
+  max-width: 850px;
+  border-radius: 24px;
+  margin-top: 40px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+.image-caption{
+  margin-top: 14px;
+  color: #64748b;
+  font-size: 14px;
+}
+
+/* ========================= */
+/* SKILLS */
+/* ========================= */
+
+.skills-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 35px;
+}
+
+.skills-wrapper span{
+  background: white;
+  padding: 14px 22px;
+  border-radius: 999px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  font-weight: 500;
+}
+
+/* ========================= */
+/* FOOTER */
+/* ========================= */
+
+.portfolio-footer{
+  background: #111827;
+  color: white;
+  padding-top: 80px;
+}
+
+.footer-container{
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+}
+
+.footer-left{
+  max-width: 500px;
+}
+
+.footer-label{
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: #9ca3af;
+}
+
+.footer-left h3{
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.footer-left p{
+  line-height: 1.9;
+  color: #d1d5db;
+}
+
+.footer-right h4{
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.footer-right{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-right a{
+  text-decoration: none;
+  color: #d1d5db;
+  margin-bottom: 12px;
+  transition: 0.3s;
+}
+
+.footer-right a:hover{
+  color: white;
+  transform: translateX(4px);
+}
+
+.footer-bottom{
+  border-top: 1px solid rgba(255,255,255,0.1);
+  text-align: center;
+  padding: 25px 0;
+  margin-top: 20px;
+}
+
+.footer-bottom p{
+  color: #9ca3af;
+  font-size: 14px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+  .footer-container{
+    flex-direction: column;
+  }
+
+}
+
+/* ========================= */
+/* PDF MODE */
+/* ========================= */
+
+@media print{
+
+  .portfolio-navbar{
+    display: none;
+  }
+
+  .portfolio-slide{
+    min-height: auto;
+    page-break-after: always;
+    padding: 80px 40px;
+  }
+
+  body{
+    background: white;
+  }
+
+}
